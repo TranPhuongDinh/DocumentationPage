@@ -23,12 +23,12 @@
             display: inline-block;
             padding: 20px 10px;
             font-size: 18px;
-            color: #000;
+            color: var(--text-color);
             text-transform: uppercase;
-            background-color: #f7f7f7;
+            background-color: var(--item-bg-color);
             &:hover,
             &.active {
-                background-color: #cacaca;
+                background-color: var(--item-hover-bg-color);
             }
             @media (max-width: 1100px) {
                 padding-left: 30px;
@@ -48,7 +48,7 @@
         width: calc(100% - 350px);
 
         @media (max-width: 1100px) {
-            box-shadow: 0px 0px 5px 0.5px rgba(0, 0, 0, 0.2);
+            box-shadow: var(--light-box-shadow);
             width: 100%;
             height: 60%;
         }
@@ -72,9 +72,8 @@
                         position: relative;
                         text-transform: uppercase;
                         border-radius: 0 10px 10px;
-                        background: #ffffff;
-                        box-shadow: 13px 13px 25px #e9e9e9,
-                            -13px -13px 25px #ffffff;
+                        background: var(--heading-bg-color);
+                        box-shadow: var(--heading-box-shadow);
                         @media (max-width: 768px) {
                             font-size: 24px;
                         }
@@ -88,7 +87,7 @@
                             left: 0;
                             width: 5px;
                             height: 100%;
-                            background-color: rgb(255, 0, 255);
+                            background-color: var(--primary-color);
                         }
                     }
                     ul {
@@ -101,7 +100,7 @@
                                 text-transform: capitalize;
                                 font-size: 20px;
                                 line-height: 1.75;
-                                color: #000;
+                                color: var(--text-color);
                                 &:hover {
                                     font-weight: 600;
                                 }

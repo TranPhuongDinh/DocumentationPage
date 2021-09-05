@@ -21,13 +21,14 @@ $(document).ready(function () {
     });
 
     $(buttonDarkMode).click(function () {
-        $("body").toggleClass("dark-mode");
-        if ($(this).attr("src").includes("sun")) {
-            $(this).attr("src", $(this).attr("src").replace("sun", "moon"));
-            $(buttonDarkModeItem).addClass("shine");
-        } else {
+        if ($("body").attr("dark-mode")) {
+            $("body").removeAttr("dark-mode");
             $(this).attr("src", $(this).attr("src").replace("moon", "sun"));
             $(buttonDarkModeItem).removeClass("shine");
+        } else {
+            $("body").attr("dark-mode", "on");
+            $(this).attr("src", $(this).attr("src").replace("sun", "moon"));
+            $(buttonDarkModeItem).addClass("shine");
         }
     });
 

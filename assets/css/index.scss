@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-
+@import "./variables";
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +8,7 @@
     list-style: none;
     scroll-behavior: smooth;
     font-family: "Noto Sans", sans-serif;
+    color: var(--text-color);
 
     @media (max-width: 476px) {
         &::-webkit-scrollbar {
@@ -22,7 +23,7 @@
     left: 0;
     right: 0;
     z-index: 10;
-    background-color: #fff;
+    background-color: var(--bg-color);
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -35,16 +36,6 @@
     }
 }
 
-body.dark-mode {
-    -webkit-filter: invert(100%) hue-rotate(180) !important;
-    filter: invert(100%) hue-rotate(180deg);
-
-    img {
-        -webkit-filter: invert(100%) hue-rotate(180deg);
-        filter: invert(100%) hue-rotate(180deg);
-    }
-}
-
 .wrapper {
     width: 100%;
     height: 100vh;
@@ -52,7 +43,7 @@ body.dark-mode {
     @import "menu-features";
 
     .content {
-        background-color: #fff;
+        background-color: var(--bg-color);
         width: 100%;
         height: calc(100% - 120px);
         overflow-x: hidden;
