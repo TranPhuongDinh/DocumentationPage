@@ -113,6 +113,14 @@ let Documents = [
                 name: "Lập trình web cơ bản - Thư viện lập trình",
                 url: "https://www.youtube.com/watch?v=CxMbQ2AqteE&list=PLLAJJPGNwNkghoNSB9xq22EJ_Z1rX7Ygs",
             },
+            {
+                name: "Angular 11 Crash Course",
+                url: "https://www.youtube.com/watch?v=3dHNOWTI7H8",
+            },
+            {
+                name: "React Crash Course 2021",
+                url: "https://www.youtube.com/watch?v=w7ejDZ8SWv8",
+            },
         ],
     },
     {

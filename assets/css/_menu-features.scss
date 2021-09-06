@@ -40,7 +40,6 @@
                 border-radius: 150px;
                 background: var(--menu-ft-icon-bg);
                 box-shadow: var(--menu-ft-icon-box-shadow);
-                transition: all 0.1s ease-in-out;
 
                 &:nth-child(4) {
                     img {
@@ -75,8 +74,8 @@
 
                 &:not(:nth-child(5)):not(:nth-child(4)):hover {
                     cursor: pointer;
-                    background: var(--toggle-dark-mode-bg);
-                    box-shadow: var(--toggle-dark-mode-box-shadow);
+                    background: var(--menu-ft-icon-hover-bg);
+                    box-shadow: var(--menu-ft-icon-hover-box-shadow);
 
                     img {
                         transform: scale(1);

@@ -16,7 +16,7 @@ $(document).ready(function () {
 
     $(buttonAlert).click(function () {
         alert(
-            "Thông báo: Đã cập nhật link các bài giảng online các môn Toán tổ hợp, Lập trình hướng đối tượng, Cơ sở dữ liệu (drive Tổng hợp)"
+            "Đã cập nhật link các bài giảng online các môn Toán tổ hợp, Lập trình hướng đối tượng, Cơ sở dữ liệu (drive Tổng hợp)"
         );
     });
 
